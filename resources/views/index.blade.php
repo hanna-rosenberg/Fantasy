@@ -1,3 +1,8 @@
+<style>
+    img {
+        height: 500px;
+    }
+</style>
 <?php
 
 use App\Models\Book;
