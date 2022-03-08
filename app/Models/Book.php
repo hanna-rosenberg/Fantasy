@@ -9,17 +9,15 @@ use Laravel\Sanctum\HasApiTokens;
 
 class Book extends Model
 {
-    use HasFactory, Notifiable, HasApiTokens;
+    use HasFactory;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<int, string>
-     */
+
 
     protected $fillable = [
         'author',
         'title',
         'year',
     ];
+
+    public $timestamps = false;
 }
