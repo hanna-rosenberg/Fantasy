@@ -9,15 +9,12 @@ use App\Models\Book;
 use App\Models\Character;
 use Illuminate\Support\Facades\DB;
 
-
-
-// $characters = Book::find(1)->characters;
-
 ?>
 
 <?php
 
-$book = DB::select('select * from books where id = ?', [1]);
+$books = DB::select('select * from books');
+$characters = DB::select('select * from characters');
 
 // foreach ($characters as $character) {
 //     echo $character['name'];}
@@ -25,8 +22,14 @@ $book = DB::select('select * from books where id = ?', [1]);
 
 <li>
     <?php
-    print_r($book);
+    print_r($books);
     ?>
+
+    @foreach($characters as $character)
+<li>
+    {{ $character->name }}
+</li>
+@endforeach
 </li>
 
 <!-- <h1>Who are you?</h1>
