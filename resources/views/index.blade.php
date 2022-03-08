@@ -1,24 +1,10 @@
-<?php
+<style>
+    img {
+        height: 500px;
+    }
+</style>
 
-use App\Models\Book;
-use App\Models\Character;
-
-// $characters = Book::find(1)->characters;
-
-?>
-
-<?php
-// foreach ($characters as $character) {
-//     echo $character['name'];}
-?>
-@foreach($book->characters as $character)
-<li>
-    <?php
-    $character->name;
-    ?>
-</li>
-@endforeach
-<!-- <h1>Who are you?</h1>
+<h1>Who are you?</h1>
 
 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffffmovieposters.com%2Fwp-content%2Fuploads%2F73931.jpg&f=1&nofb=1" alt="">
 
