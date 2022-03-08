@@ -21,10 +21,8 @@ $characters = DB::select('select * from characters');
 ?>
 
 <li>
-    <?php
-    print_r($books);
-    ?>
 
+    {{ $books[0]->title}}
     @foreach($characters as $character)
 <li>
     {{ $character->name }}
