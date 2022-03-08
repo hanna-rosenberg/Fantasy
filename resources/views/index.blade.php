@@ -35,25 +35,16 @@ use App\Models\Book;
 use App\Models\Character;
 use Illuminate\Support\Facades\DB;
 
-
-
-// $characters = Book::find(1)->characters;
-
 ?>
 
 <?php
 
-$book = DB::select('select * from books');
+$books = DB::select('select * from books');
+$characters = DB::select('select * from characters');
 
 // foreach ($characters as $character) {
 //     echo $character['name'];}
 ?>
-
-<li>
-    <?php
-    print_r($book);
-    ?>
-</li>
 
 <h1>Who are you?</h1>
 <form>
