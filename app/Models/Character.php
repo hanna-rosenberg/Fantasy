@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Book;
 
 class Character extends Model
 {
@@ -21,4 +22,9 @@ class Character extends Model
     ];
 
     public $timestamps = false;
+
+    public function book()
+    {
+        return $this->belongsTo(Book::class);
+    }
 }

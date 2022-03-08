@@ -4,8 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Notifications\Notifiable;
-use Laravel\Sanctum\HasApiTokens;
+use App\Models\Character;
 
 class Book extends Model
 {
@@ -18,4 +17,9 @@ class Book extends Model
     ];
 
     public $timestamps = false;
+
+    public function characters()
+    {
+        return $this->hasMany(Character::class);
+    }
 }
