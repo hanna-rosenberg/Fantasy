@@ -18,7 +18,8 @@ class Character extends Model
         'power',
         'colour',
         'book_id',
-        'summary'
+        'summary',
+        'img_url',
     ];
 
     public $timestamps = false;
