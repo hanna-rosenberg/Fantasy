@@ -13,8 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::view('/', 'index')->middleware('guest');
 
-// Route::get('/book', GetBookController::class);
+
+// Route::post('getbook', GetBooksController::class);
+
+// Route::get('/', function () {
+//     return view('index');
+// });
+
+// Route::get('/', GetBooksController::class);

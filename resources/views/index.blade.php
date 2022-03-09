@@ -40,8 +40,19 @@ $characters = DB::select('select * from characters');
     <div class="book">
         {{$book->title}}
         <form action="/book?id=<?= $book->id ?>" method="post">
-            <button> <img src="./images/books/<?= $book->img_url ?>" alt=""></button>
+            @csrf
+            <button> <img src="./images/books/<?= $book->img_url ?>" alt="Poster of the feature film <?= $book->title ?>"></button>
         </form>
     </div>
     @endforeach
 </div>
+<!-- <div class="characters-container">
+    @foreach($characters as $character)
+    <div class="character">
+        <li>
+            {{$character->name}}
+            <img src="./images/characters/<?= $character->img_url ?>" alt="">
+        </li>
+    </div>
+    @endforeach
+</div> -->
