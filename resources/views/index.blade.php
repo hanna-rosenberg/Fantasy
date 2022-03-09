@@ -1,4 +1,8 @@
 <style>
+    body {
+        background-color: #435523;
+    }
+
     img {
         height: 500px;
     }
@@ -11,21 +15,26 @@
 
     h1 {
         margin: auto;
+        color: bisque;
+    }
+
+    .book {
+        color: bisque;
     }
 
     .book-container {
         display: flex;
     }
 </style>
+
+
 <?php
 
 use App\Models\Book;
 use App\Models\Character;
 use Illuminate\Support\Facades\DB;
 
-?>
 
-<?php
 
 $books = DB::select('select * from books');
 $characters = DB::select('select * from characters');
