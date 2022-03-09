@@ -47,7 +47,19 @@ $characters = DB::select('select * from characters');
 ?>
 
 <h1>Who are you?</h1>
-<form>
-    <button class="hp-button" type="submit"></button>
+@foreach($books as $book)
+{{$book->title}}
+{{$book->id}}
+{{$book->author}}
+{{$book->year}}
+<form action="">
+    <button>Choose</button>
+</form>
+@endforeach
 
+<form action="/hp" method="post">
+    <button class="hp-button" type="submit"></button>
+</form>
+<form>
     <button class="lotr-button" type="submit"></button>
+</form>
