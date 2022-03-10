@@ -10,6 +10,12 @@ class BookController extends Controller
 {
     public function book()
     {
-        return view('/book', ['book' => Book::first()]);
+        $book = Book::where('id', '=', $_GET['id'])->first();
+        return view('/book', ['book' => $book]);
     }
+
+    // public function show($id)
+    // {
+    //     return view('/book', ['book' => Book::findOrFail($id)]);
+    // }
 }
