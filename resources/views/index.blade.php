@@ -1,20 +1,31 @@
 <style>
     body {
-        background-color: #435523;
+        background-color: rgb(66, 66, 78);
     }
 
     img {
         height: 500px;
+        transition: transform 0.2s;
+    }
+
+    img:hover {
+        transform: scale(1.1);
     }
 
     button {
         cursor: pointer;
         border: none;
-        background-color: none;
+        background-color: rgb(66, 66, 78);
+        margin-top: 40px;
     }
 
     h1 {
         margin: auto;
+        color: bisque;
+    }
+
+    p {
+        font-size: 20px;
         color: bisque;
     }
 
@@ -44,6 +55,7 @@ $characters = DB::select('select * from characters');
 ?>
 
 <h1>Who are you?</h1>
+<p> Take out test to find out, first choose your book!</o>
 <div class="book-container">
     @foreach($books as $book)
     <div class="book">
