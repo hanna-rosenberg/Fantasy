@@ -22,3 +22,10 @@
     margin-top: 50px;
     width: 20%;
 }
+
+.book-section button {
+    margin-top: 40px;
+    background-color: rgb(255, 243, 205);
+    border: none;
+    cursor: pointer;
+}

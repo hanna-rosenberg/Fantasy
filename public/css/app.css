@@ -85,5 +85,12 @@ body {
     width: 20%;
 }
 
+.book-section button {
+    margin-top: 40px;
+    background-color: rgb(255, 243, 205);
+    border: none;
+    cursor: pointer;
+}
+
 /* npm run dev om du vill kör, detta gäller js också!!! */
 
