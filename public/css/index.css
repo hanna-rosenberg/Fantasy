@@ -22,7 +22,21 @@ h1 {
     font-family: "Neucha", cursive;
     font-size: 60px;
     margin: auto;
-    color: bisque;
+    color: rgb(255, 255, 255);
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fffd79,
+            0 0 4px #fcde38, 0 0 5px #f5ce4f, 0 0 6px #f5da43, 0 0 7px #f7d542;
+    }
+    to {
+        text-shadow: 0 0 2px #fff, 0 0 3px #ffd3a2, 0 0 4px #fdf479,
+            0 0 5px #ffe08c, 0 0 6px #ffecac, 0 0 7px #ffe99f, 0 0 8px #ffee8f;
+    }
 }
 
 p {
