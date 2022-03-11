@@ -6,10 +6,19 @@
     <img src="./images/books/{{$book->img_url}}" alt="">
     <h2>Question 1: {{$question->question}}</h2>
     <ul>
-        <li>{{$question->a}}</li>
-        <li>{{$question->b}}</li>
-        <li>{{$question->c}}</li>
-        <li>{{$question->d}}</li>
+        <form action="">
+            <input type="radio" id="huey" name="drone" value="huey" checked>
+            <label for="huey">{{$question->a}}</label>
+            <input type="radio" id="huey" name="drone" value="huey">
+            <label for="huey">{{$question->b}}</label>
+            <input type="radio" id="huey" name="drone" value="huey">
+            <label for="huey">{{$question->c}}</label>
+            <input type="radio" id="huey" name="drone" value="huey">
+            <label for="huey">{{$question->d}}</label>
+
+
+            <button type="submit">Kolla vem du är!</button>
+        </form>
     </ul>
 
     <!-- <form action="/quiz">

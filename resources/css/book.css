@@ -1,12 +1,24 @@
+.book-section {
+    color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: "League Spartan", sans-serif;
+}
+
 .book-section h1 {
     font-family: "Neucha", cursive;
     font-size: 30px;
     margin: auto;
     color: bisque;
     margin-top: 100px;
+    display: flex;
+    justify-content: center;
 }
 
 .book-section img {
     margin-top: 50px;
-    width: 30%;
+    width: 20%;
 }
