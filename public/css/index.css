@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(66, 66, 78);
+}
+
+img {
+    height: 500px;
+    transition: transform 0.2s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: rgb(66, 66, 78);
+    margin-top: 40px;
+}
+
+h1 {
+    font-family: "Neucha", cursive;
+    font-size: 60px;
+    margin: auto;
+    color: bisque;
+}
+
+p {
+    font-family: "League Spartan", sans-serif;
+    font-size: 30px;
+    color: bisque;
+}
+
+.book {
+    color: bisque;
+}
+
+.book-container {
+    display: flex;
+    font-family: "Neucha", cursive;
+    font-size: 20px;
+}

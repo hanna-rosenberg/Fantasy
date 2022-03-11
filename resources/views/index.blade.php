@@ -1,43 +1,4 @@
-<style>
-    body {
-        background-color: rgb(66, 66, 78);
-    }
-
-    img {
-        height: 500px;
-        transition: transform 0.2s;
-    }
-
-    img:hover {
-        transform: scale(1.1);
-    }
-
-    button {
-        cursor: pointer;
-        border: none;
-        background-color: rgb(66, 66, 78);
-        margin-top: 40px;
-    }
-
-    h1 {
-        margin: auto;
-        color: bisque;
-    }
-
-    p {
-        font-size: 20px;
-        color: bisque;
-    }
-
-    .book {
-        color: bisque;
-    }
-
-    .book-container {
-        display: flex;
-    }
-</style>
-
+@include('header')
 
 <?php
 
@@ -78,3 +39,5 @@ $characters = DB::select('select * from characters');
     </div>
     @endforeach
 </div> -->
+
+@include('footer')
