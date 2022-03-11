@@ -16,7 +16,8 @@ $characters = DB::select('select * from characters');
 ?>
 <section class="index">
     <h1>Who are you?</h1>
-    <p> Take out test to find out, first choose your book!</o>
+    <p> Take our test to find out!<br>
+        First choose your book:</o>
     <div class="book-container">
         @foreach($books as $book)
         <div class="book">
