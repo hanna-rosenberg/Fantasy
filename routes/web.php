@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\CharacterController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -18,6 +19,8 @@ use Illuminate\Support\Facades\Route;
 Route::view('/', 'index')->middleware('guest');
 
 Route::post('/book', [BookController::class, 'book', 'question'])->name('book');
+
+Route::post('/characters', [CharacterController::class, 'character'])->name('character');
 
 
 // Route::get('/book', [BookController::class, 'question'])->name('book');
