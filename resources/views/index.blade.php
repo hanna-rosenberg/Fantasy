@@ -22,7 +22,8 @@ $characters = DB::select('select * from characters');
     <div class="book">
         {{$book->title}}
         <!-- <form action="/book?id=<?= $book->id ?>" method="post"> -->
-        <form action="{{ route('book') }}" method="POST">
+        <form action="book?id={{ $book->id }}/" method="post">
+            <!-- <form action="{{ route('book') }}" method="POST"> -->
             @csrf
             <button> <img src="./images/books/<?= $book->img_url ?>" alt="Poster of the feature film <?= $book->title ?>"></button>
         </form>
