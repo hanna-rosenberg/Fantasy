@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'index')->middleware('guest');
 
-Route::post('/book', [BookController::class, 'book'])->name('book');
+Route::get('/book', [BookController::class, 'book'])->name('book');
 
 // Route::post('getbook', GetBooksController::class);
 
