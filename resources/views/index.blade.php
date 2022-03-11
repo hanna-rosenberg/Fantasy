@@ -14,22 +14,23 @@ $characters = DB::select('select * from characters');
 // foreach ($characters as $character) {
 //     echo $character['name'];}
 ?>
-
-<h1>Who are you?</h1>
-<p> Take out test to find out, first choose your book!</o>
-<div class="book-container">
-    @foreach($books as $book)
-    <div class="book">
-        {{$book->title}}
-        <!-- <form action="/book?id=<?= $book->id ?>" method="post"> -->
-        <form action="book?id={{ $book->id }}/" method="post">
-            <!-- <form action="{{ route('book') }}" method="POST"> -->
-            @csrf
-            <button> <img src="./images/books/<?= $book->img_url ?>" alt="Poster of the feature film <?= $book->title ?>"></button>
-        </form>
+<section class="index">
+    <h1>Who are you?</h1>
+    <p> Take out test to find out, first choose your book!</o>
+    <div class="book-container">
+        @foreach($books as $book)
+        <div class="book">
+            {{$book->title}}
+            <!-- <form action="/book?id=<?= $book->id ?>" method="post"> -->
+            <form action="book?id={{ $book->id }}/" method="post">
+                <!-- <form action="{{ route('book') }}" method="POST"> -->
+                @csrf
+                <button> <img src="./images/books/<?= $book->img_url ?>" alt="Poster of the feature film <?= $book->title ?>"></button>
+            </form>
+        </div>
+        @endforeach
     </div>
-    @endforeach
-</div>
+</section>
 <!-- <div class="characters-container">
     @foreach($characters as $character)
     <div class="character">

@@ -2,23 +2,23 @@ body {
     background-color: rgb(66, 66, 78);
 }
 
-img {
+.index img {
     height: 500px;
     transition: transform 0.2s;
 }
 
-img:hover {
+.index img:hover {
     transform: scale(1.1);
 }
 
-button {
+.index button {
     cursor: pointer;
     border: none;
     background-color: rgb(66, 66, 78);
     margin-top: 40px;
 }
 
-h1 {
+.index h1 {
     font-family: "Neucha", cursive;
     font-size: 60px;
     margin: auto;
@@ -39,7 +39,7 @@ h1 {
     }
 }
 
-p {
+.index p {
     font-family: "League Spartan", sans-serif;
     font-size: 30px;
     color: bisque;
