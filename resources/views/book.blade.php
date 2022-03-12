@@ -19,8 +19,8 @@
             <input type="radio" id="huey" name="answer" value="{{$question->e}}">
             <label for="huey">{{$question->e}}</label>
             <br>
-            <!--
-            <h2>Question 2: {{$question_two->question}}</h2>
+
+            <!-- <h2>Question 2: {{$question_two->question}}</h2>
             <input type="radio" id="huey" name="drone" value="huey" checked>
             <label for="huey">{{$question_two->a}}</label>
             <input type="radio" id="huey" name="drone" value="huey">
