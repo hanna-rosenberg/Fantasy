@@ -42,7 +42,12 @@
             <label for="huey">{{$question_three->e}}</label>
             <br> -->
 
-            <button type="submit">Find out who you are!</button>
+            <h2>Write the secret word below</2><br>
+                <input type="text" name="password"></input>
+                <br>
+                <br>
+
+                <button type="submit">Find out who you are!</button>
         </form>
     </ul>
 </section>

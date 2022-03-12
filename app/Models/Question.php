@@ -15,6 +15,7 @@ class Question extends Model
         'b',
         'c',
         'd',
+        'e',
         'book_id'
     ];
 

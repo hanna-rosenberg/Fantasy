@@ -1,4 +1,5 @@
 @import "index.css";
 @import "book.css";
+@import "character.css";
 
-/* npm run dev om du vill kör, detta gäller js också!!! */
+/* run npm run dev in terminal to add styling, this is for laravel mix. Add all your css-files here */
