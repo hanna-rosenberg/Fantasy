@@ -20,7 +20,7 @@ Route::view('/', 'index')->middleware('guest');
 
 Route::post('/book', [BookController::class, 'book', 'question'])->name('book');
 
-Route::post('/characters', [CharacterController::class, 'character'])->name('character');
+Route::post('/character', [CharacterController::class, 'character'])->name('character');
 
 
 // Route::get('/book', [BookController::class, 'question'])->name('book');
