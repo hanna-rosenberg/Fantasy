@@ -22,7 +22,8 @@ class CharacterController extends Controller
         if ($secret == $password) {
             return view('/character', ['character' => $character, 'answer' => $answer]);
         } else {
-            echo 'Whoops! Wrong secret word!';
+            echo 'Wrong secret word! Try again!';
+            // return back()->withErrors('Wrong secret word! Try again!');
         }
     }
 }

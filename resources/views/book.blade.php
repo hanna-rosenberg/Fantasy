@@ -4,6 +4,9 @@
     <h1>You have chosen {{$book->title}}!</h1>
 
     <img src="./images/books/{{$book->img_url}}" alt="">
+
+    @include('errors')
+
     <h2>Question 1: {{$question->question}}</h2>
     <ul>
         <form action="/character?book_id={{$book->id}}" method="post">
@@ -43,11 +46,11 @@
             <br> -->
 
 
-            <label for="secret">
-                <h2>Write the secret word below</h2>
-            </label>
+            <h2>Write the secret word below</h2>
+            <label for="secret">Secret word: </label>
             <input type="text" name="secret"></input>
             <br>
+            <p>Hint: {{$book->hint}}</p>
             <br>
 
             <button type="submit">Find out who you are!</button>
