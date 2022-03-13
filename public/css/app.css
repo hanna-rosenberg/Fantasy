@@ -128,5 +128,20 @@ body {
     list-style: none;
 }
 
+.menu-section {
+    background-color: rgb(148, 148, 156);
+    height: 80px;
+    width: 100%;
+}
+
+.menu-section div {
+    color: black;
+    font-family: "League Spartan", sans-serif;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-left: 80px;
+    color: bisque;
+}
+
 /* run npm run dev in terminal to add styling, this is for laravel mix. Add all your css-files here */
 

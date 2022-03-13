@@ -1,4 +1,5 @@
 @include('header')
+@include('menu')
 
 <section class="book-section">
     <h1>You have chosen {{$book->title}}!</h1>

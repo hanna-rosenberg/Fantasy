@@ -1,4 +1,5 @@
 @include('header')
+@include('menu')
 <!-- Här ska karaktärerna loopas men det funkar ej -->
 
 <section class="character-section">
