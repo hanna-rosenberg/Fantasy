@@ -1,7 +1,8 @@
 <section class="menu-section">
     <div>
 
-        <link src="/">Start</link>
+
+        <a href=" {{ route('index') }}">Start</a>
 
     </div>
 </section>

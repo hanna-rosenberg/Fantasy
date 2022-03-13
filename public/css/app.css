@@ -135,12 +135,17 @@ body {
 }
 
 .menu-section div {
+    padding-top: 20px;
+}
+
+.menu-section a {
     color: black;
     font-family: "League Spartan", sans-serif;
     font-size: 40px;
     padding-top: 20px;
     padding-left: 80px;
     color: bisque;
+    text-decoration: none;
 }
 
 /* run npm run dev in terminal to add styling, this is for laravel mix. Add all your css-files here */
