@@ -10,12 +10,12 @@ class IndexController extends Controller
 {
     public function index()
     {
-        $books = Book::select('select * from books');
-        $characters = Character::select('select * from characters');
+        $books = Book::all();
+        $characters = Character::all();
 
         return view('/', [
-            'book' => $books,
-            'character' => $characters,
+            'books' => $books,
+            'characters' => $characters,
         ]);
     }
 }

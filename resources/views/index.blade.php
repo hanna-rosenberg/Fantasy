@@ -1,5 +1,4 @@
 @include('header')
-@include('menu')
 
 <?php
 
@@ -9,8 +8,8 @@ use Illuminate\Support\Facades\DB;
 
 
 
-// $books = DB::select('select * from books');
-// $characters = DB::select('select * from characters');
+$books = DB::select('select * from books');
+$characters = DB::select('select * from characters');
 
 // foreach ($characters as $character) {
 //     echo $character['name'];}
@@ -23,9 +22,9 @@ use Illuminate\Support\Facades\DB;
         @foreach($books as $book)
         <div class="book">
             {{$book->title}}
-            <!-- <form action="/book?id=<?= $book->id ?>" method="post"> -->
+
             <form action="book?id={{ $book->id }}/" method="post">
-                <!-- <form action="{{ route('book') }}" method="POST"> -->
+
                 @csrf
                 <button> <img src="./images/books/<?= $book->img_url ?>" alt="Poster of the feature film <?= $book->title ?>"></button>
             </form>
