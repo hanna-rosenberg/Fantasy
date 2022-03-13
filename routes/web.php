@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\CharacterController;
+use App\Http\Controllers\IndexController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -16,7 +17,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'index')->middleware('guest')->name('index');
+Route::view('/', [IndexController::class, 'book', 'character'])->middleware('guest')->name('index');
+// Route::view('/', 'index')->middleware('guest')->name('index');
 
 Route::post('/book', [BookController::class, 'book', 'question'])->name('book');
 

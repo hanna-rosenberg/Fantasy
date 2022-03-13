@@ -9,8 +9,8 @@ use Illuminate\Support\Facades\DB;
 
 
 
-$books = DB::select('select * from books');
-$characters = DB::select('select * from characters');
+// $books = DB::select('select * from books');
+// $characters = DB::select('select * from characters');
 
 // foreach ($characters as $character) {
 //     echo $character['name'];}
