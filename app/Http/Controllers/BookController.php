@@ -16,6 +16,7 @@ class BookController extends Controller
         $question = Question::where('book_id', '=', $book_id)->first();
         $question_two = Question::where('book_id', '=', $book_id)->skip(1)->first();
         $question_three = Question::where('book_id', '=', $book_id)->skip(2)->first();
+
         return view('/book', [
             'book' => $book,
             'question' => $question,

@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\CharacterController;
+use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\CharacterGalleryController;
 use App\Http\Controllers\IndexController;
 use Illuminate\Support\Facades\Route;
 
@@ -17,22 +19,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', [IndexController::class, 'index'])->middleware('guest')->name('index');
-// Route::view('/', 'index')->middleware('guest')->name('index');
+Route::get('/', [IndexController::class, 'index'])->middleware('guest')->name('index');
 
 Route::post('/book', [BookController::class, 'book', 'question'])->name('book');
 
 Route::post('/character', [CharacterController::class, 'character'])->name('character');
 
+Route::get('/gallery', [GalleryController::class, 'gallery'])->middleware('guest')->name('gallery');
 
-// Route::get('/book', [BookController::class, 'question'])->name('book');
+Route::post('/charactergallery', [CharacterGalleryController::class, 'charactergallery'])->name('charactergallery');
 
-// Route::post('/book', [BookController::class, 'book', 'question'])->name('book');
-
-// Route::post('getbook', GetBooksController::class);
-
-// Route::get('/', function () {
-//     return view('index');
-// });
-
-// Route::get('/', GetBooksController::class);
+// Route::post('/extra', [CharacterController::class, 'character'])->name('extra');

@@ -5,7 +5,7 @@
 <section class="character-section">
     <h2>You chose {{$answer}}!</h2>
 
-    <img src="./images/characters/{{$character->img_url}}" alt="">
+    <img src="./images/characters/{{$character->img_url}}" alt="Portrait of {{$character->name}}">
 
     <h3>You are {{$character->name}}!</h3>
     <ul>

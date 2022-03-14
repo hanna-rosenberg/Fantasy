@@ -6,14 +6,14 @@ use App\Models\Book;
 use App\Models\Character;
 use Illuminate\Http\Request;
 
-class IndexController extends Controller
+class GalleryController extends Controller
 {
-    public function index()
+    public function gallery()
     {
         $books = Book::all();
         $characters = Character::all();
 
-        return view('/index', [
+        return view('/gallery', [
             'books' => $books,
             'characters' => $characters,
         ]);
