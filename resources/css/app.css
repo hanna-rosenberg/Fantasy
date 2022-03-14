@@ -2,5 +2,6 @@
 @import "book.css";
 @import "character.css";
 @import "menu.css";
+@import "gallery.css";
 
 /* run npm run dev in terminal to add styling, this is for laravel mix. Add all your css-files here */
