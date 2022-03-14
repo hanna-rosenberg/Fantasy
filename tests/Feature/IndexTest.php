@@ -3,19 +3,15 @@
 namespace Tests\Feature;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
-class ExampleTest extends TestCase
+class IndexTest extends TestCase
 {
-    /**
-     * A basic test example.
-     *
-     * @return void
-     */
-    public function test_the_application_returns_a_successful_response()
+    public function test_view_index()
     {
         $response = $this->get('/');
-
+        $response->assertSeeText('Who are you?');
         $response->assertStatus(200);
     }
 }
