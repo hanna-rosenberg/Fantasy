@@ -106,21 +106,25 @@ body {
     flex-direction: column;
     text-align: center;
     font-family: "League Spartan", sans-serif;
+    background-color: rgb(108, 105, 124);
+    width: 60%;
+    margin: auto;
+    margin-top: 100px;
 }
 
 .character-section h2 {
     font-family: "Neucha", cursive;
-    font-size: 30px;
+    font-size: 35px;
     margin: auto;
     color: bisque;
-    margin-top: 100px;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
 }
 
 .character-section img {
     margin-top: 50px;
-    width: 40%;
+    width: 90%;
 }
 
 .character-section button {
@@ -132,6 +136,26 @@ body {
 
 .character-section li {
     list-style: none;
+}
+
+.character-section h3 {
+    color: bisque;
+    font-family: "Neucha", cursive;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.character-section h4 {
+    font-size: 30px;
+    padding: none;
+    margin: none;
+}
+
+.character-section p {
+    font-size: 25px;
+    padding: 0px 20px 20px 20px;
 }
 
 .menu-section {
