@@ -65,4 +65,15 @@ body {
     .book-container {
         flex-direction: column;
     }
+    .index img:hover {
+        transform: none;
+    }
+
+    .index img {
+        height: 300px;
+    }
+
+    .book:last-of-type {
+        margin-top: 50px;
+    }
 }

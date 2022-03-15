@@ -64,6 +64,17 @@ body {
     .book-container {
         flex-direction: column;
     }
+    .index img:hover {
+        transform: none;
+    }
+
+    .index img {
+        height: 300px;
+    }
+
+    .book:last-of-type {
+        margin-top: 50px;
+    }
 }
 
 .book-section {
@@ -174,8 +185,25 @@ body {
     font-size: 40px;
     padding-top: 20px;
     padding-left: 80px;
-    color: bisque;
+    color: rgb(0, 0, 0);
     text-decoration: none;
+}
+
+.menu-section a:hover {
+    color: bisque;
+}
+
+@media screen and (max-width: 750px) {
+    .menu-section a {
+        font-size: 25px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .menu-section {
+        height: 60px;
+        width: 100%;
+    }
 }
 
 h2 {

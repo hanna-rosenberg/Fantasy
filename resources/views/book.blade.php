@@ -13,15 +13,15 @@
         <form action="/character?book_id={{$book->id}}" method="post">
             @csrf
             <input type="radio" id="huey" name="answer" value="{{$question->a}}" checked>
-            <label for="huey">{{$question->a}}</label>
+            <label for="huey">{{$question->a}}</label><br>
             <input type="radio" id="huey" name="answer" value="{{$question->b}}">
-            <label for="huey">{{$question->b}}</label>
+            <label for="huey">{{$question->b}}</label><br>
             <input type="radio" id="huey" name="answer" value="{{$question->c}}">
-            <label for="huey">{{$question->c}}</label>
+            <label for="huey">{{$question->c}}</label><br>
             <input type="radio" id="huey" name="answer" value="{{$question->d}}">
-            <label for="huey">{{$question->d}}</label>
+            <label for="huey">{{$question->d}}</label><br>
             <input type="radio" id="huey" name="answer" value="{{$question->e}}">
-            <label for="huey">{{$question->e}}</label>
+            <label for="huey">{{$question->e}}</label><br>
             <br>
 
             <!-- <h2>Question 2: {{$question_two->question}}</h2>
